@@ -1,0 +1,11 @@
+[class^="container"] {
+    border : 2px solid grey;
+    border-radius : 5px;
+    background-color : #eff0f1;
+}
+
+[class^="col"] {
+    border : 1px solid grey;
+    border-radius : 5px;
+    background-color : #5fba7d;
+}

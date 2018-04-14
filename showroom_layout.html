@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/showroom.css" >
+    
+  </head>
+  <body>
+    <h1>Exemples de layout</h1>
+    <h2>Grille Simple</h2>
+    <div class="container">
+       Contenu avec 3 colonnes :
+
+       <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>
+
+    </div>
+    <br/>
+    <h2>Grille Simple avec design "Fluide" (toujours 100%)</h2>
+    <div class="container-fluid">
+        Un <b>container fluid</b> est redimensionné en permanence ...
+    </div>
+    <br/>
+    <h2>Largeurs auto et égales</h2>
+    <div class="container">
+        Contenu avec 2 lignes et des colonnes ayant toujours la même taille quelque soit la taille du device
+        <div class="row">
+            <div class="col">
+            1 of 2
+            </div>
+            <div class="col">
+            2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            1 of 3
+            </div>
+            <div class="col">
+            2 of 3
+            </div>
+            <div class="col">
+            3 of 3
+            </div>
+        </div>
+    </div>
+    <br/>
+    <h2>Largeurs différentes</h2>
+    <div class="container">
+        Contenu avec une colonne dont la taille est plus grande.<br/>
+        Il y a <b>12</b> colonnes par ligne
+        <div class="row">
+            <div class="col">
+            1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+          </div>
+    </div>  
+    <br/>
+    <h2>Empilement vertical ou horizontal suivant le device</h2>
+    <div class="container">
+      Des colonnes qui s'empilent sur des <i>petits</i> terminaux puis se remettent en ligne au delà du breakpoint
+      <div class="row">
+        <div class="col-sm-8">col-sm-8</div> <!-- en ligne jusqu'au breakpoint sm puis ratio de 8/12 au delà-->
+        <div class="col-sm-4">col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+      </div>
+    </div>
+    <br/>
+    <h2>Mix</h2>
+    <div class="container">
+      Un empilement avec une colonne à 100% de width et une à 50% sur terminal mobile (md) et on repasse sur une ligne au delà avec 2 colonnes de ratio 8/12;4/12
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-12 col-md-8">.col-12 .col-md-8</div> <!-- col-12 indique le ratio sur 1 ligne tandis que col-md-8 indique que l'on empile jusqu'à md puis ensuite le ratio est de 8/12-->
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
+    </div>
+    <br/>
+    <h2>Alignement vertical</h2>
+    <div class="container">
+        Classes <i>align-items-start</i>,<i>align-items-center</i>,<i>align-items-end</i> au niveau des *rows*
+        <div class="row align-items-start" style="min-height:10rem; background-color: darksalmon">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-center" style="min-height:10rem; background-color: darkgoldenrod">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+        <div class="row align-items-end" style="min-height:10rem; background-color: darkseagreen">
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+      </div>
+      <br/>
+      <h2>Alignement vertical 2</h2>
+      <div class="container">
+        <div class="row" style="min-height:10rem;">
+          <div class="col align-self-start">
+            One of three columns
+          </div>
+          <div class="col align-self-center">
+            One of three columns
+          </div>
+          <div class="col align-self-end">
+            One of three columns
+          </div>
+        </div>
+        <i>Que se passe-t'il si le deuxième élément a la classe <code>align-self-start</code> au lieu de <code>align-self-center</code> ?</i><br/>
+        <i>et juste <code>col</code> au lieu de <code>col align-self-center</code> ?</i>
+      </div>
+      <br/>
+      <h2>Alignement horizontal</h2>
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+      </div>
+      <br/>
+      <h2>Pas d'espace sur les contenus entre les colonnes et lignes</h2>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+      </div>
+
+    <!-- jQuery first, then poper, then Bootstrap JS. -->
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
